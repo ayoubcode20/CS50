@@ -1,4 +1,3 @@
-#include <cs50.h>
 #include <stdio.h>
 #include <string.h>
 
@@ -12,7 +11,9 @@ int main(void)
     int i, j, ch, k;
     int arr[BITS_IN_BYTE];
 
-    string str = get_string("Message: ");
+    char *str;
+    printf("Message: ");
+    scanf("%s", str);
 
     for (i = 0; str[i]; i++)
     {

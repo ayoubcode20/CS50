@@ -1,6 +1,6 @@
-#include <cs50.h>
 #include <ctype.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - a program that calculates the approximate
@@ -14,7 +14,12 @@ int main(void)
     int i;
     double L = 0, W = 1, S = 0;
     double grade;
-    string text = get_string("Text: ");
+    char *text = malloc(sizeof(char) * 1024);
+
+    if (!text)
+	    return (1);
+    printf("Text: ");
+    fgets(text, sizeof(char) * 1024, stdin);
 
     // count number of letters, words and sentences
     for (i = 0; text[i] != '\0'; i++)
