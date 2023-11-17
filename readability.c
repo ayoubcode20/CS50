@@ -32,6 +32,8 @@ int main(void)
             W++;
     }
 
+    free(text);
+
     // count the average number of letters and sentences per 100 words
     L = L / W * 100;
     S = S / W * 100;
