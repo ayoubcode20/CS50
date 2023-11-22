@@ -1,3 +1,11 @@
+/*
+Runoff Voting Program:
+
+  Simulates a ranked-choice (runoff) voting system. Takes candidate names as
+  command-line arguments, collects voter preferences, and determines the winner
+  or a tie through iterative runoffs.
+*/
+
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
